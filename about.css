@@ -76,6 +76,113 @@ body, html {
 
 
 
+/* Slideshow container */
+ h3 {
+    text-align: center;
+    margin-top: 20px;
+    font-size: 2rem;
+    color: #333;
+ }
+ * {
+    box-sizing: border-box;
+  }
+  
+  .slideshow-container {
+    max-width: 1400px;
+    max-height: 800px; /* Set your desired maximum height */
+    position: relative;
+    margin: auto;
+    overflow: hidden; /* Hide any content that overflows the max height */
+  }
+  
+  /* Images inside the carousel */
+  .mySlides img {
+    width: auto; /* Allow width to adjust automatically */
+    height: 100%; /* Ensure images fill the height of the container */
+    max-height: 100%; /* Prevent images from exceeding the container's max height */
+    max-width: 100%; /* Prevent images from exceeding the container's max width */
+    display: block; /* Prevent inline whitespace around images */
+    margin: auto; /* Center the image horizontally */
+  }
+  
+  /* Next & previous buttons */
+  .prev, .next {
+    cursor: pointer;
+    position: absolute;
+    top: 50%;
+    width: auto;
+    margin-top: -22px;
+    padding: 30px;
+    color: white;
+    font-weight: bold;
+    font-size: 18px;
+    transition: 0.6s ease;
+    border-radius: 0 3px 3px 0;
+    user-select: none;
+  }
+  
+  .prev {
+    left: 10px; /* Adjust to place the left button properly */
+    border-radius: 3px 0 0 3px;
+  }
+  
+  .next {
+    right: 10px;
+    border-radius: 3px 0 0 3px;
+  }
+  
+  .prev:hover, .next:hover {
+    background-color: rgba(0, 0, 0, 0.8);
+  }
+  
+  /* Caption text */
+  .text {
+    color: #ffcc00;
+    font-size: 15px;
+    padding: 8px 12px;
+    position: absolute;
+    bottom: 8px;
+    width: 100%;
+    text-align: center;
+    font-weight: bold;
+  }
+  
+  /* Number text (1/3 etc) */
+  .numbertext {
+    color: #f2f2f2;
+    font-size: 12px;
+    padding: 8px 12px;
+    position: absolute;
+    top: 0;
+  }
+  
+  /* The dots/bullets/indicators */
+  .dot {
+    cursor: pointer;
+    height: 15px;
+    width: 15px;
+    margin: 0 2px;
+    background-color: #bbb;
+    border-radius: 50%;
+    display: inline-block;
+    transition: background-color 0.6s ease;
+  }
+  
+  .active, .dot:hover {
+    background-color: #717171;
+  }
+  
+  /* Fading animation */
+  .fade {
+    animation-name: fade;
+    animation-duration: 1.5s;
+  }
+  
+  @keyframes fade {
+    from { opacity: 0.4; }
+    to { opacity: 1; }
+  }
+  
 
 
 /* Wrapper for centering content */
@@ -126,6 +233,7 @@ body, html {
 
 
 
+
 /* Footer styling */
 .footer {
     background-color: #333; /* Dark grey background */
@@ -138,8 +246,6 @@ body, html {
     gap: 0px; /* Adds a small gap between sections */
 }
 
-/* Email signup section */
-/* Email signup section */
 .email-signup {
     max-width: 45%;
     text-align: left;
@@ -160,40 +266,22 @@ body, html {
 }
 
 .email-signup p {
-    margin: 10px 0; /* Adjust spacing between the heading and the paragraph */
-    line-height: 1.6; /* Keep paragraph readability */
+    color: #fff;
+    font-size: 1.1em;
 }
 
-/* Styling for the form */
-.footer form {
-    display: flex;
-    justify-content: flex-end;
-    align-items: center;
-}
-
-.footer input[type="email"] {
-    padding: 10px;
-    border: none;
-    width: 250px;
-    margin-right: 2px;
-    border-radius: 5px;
-    font-size: 1em;
-}
-
-.footer button {
-    padding: 10px 20px;
-    background-color: #ffcc00;
-    border: none;
-    border-radius: 5px;
-    font-size: 1em;
+.email-signup p a {
+    text-decoration: none; /* Ensure no underline by default */
     font-weight: bold;
-    cursor: pointer;
-    color: #333;
+    color: #ffcc00;
 }
 
-.footer button:hover {
-    background-color: #e6b800;
+.email-signup p a:hover {
+    text-decoration: underline; /* Add underline on hover */
+    color: #ffcc00; /* Maintain consistent color */
 }
+
+
 
 /* Styling for contact info section */
 .contact-info {
@@ -247,16 +335,6 @@ body, html {
     }
 
     .footer h3 {
-        margin-bottom: 10px;
-    }
-
-    .footer form {
-        justify-content: center;
-    }
-
-    .footer input[type="email"] {
-        width: 200px;
-        margin-right: 0;
         margin-bottom: 10px;
     }
 

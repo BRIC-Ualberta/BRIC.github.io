@@ -61,8 +61,6 @@ body, html {
     gap: 0px; /* Adds a small gap between sections */
 }
 
-/* Email signup section */
-/* Email signup section */
 .email-signup {
     max-width: 45%;
     text-align: left;
@@ -82,41 +80,8 @@ body, html {
     text-align: left;
 }
 
-.email-signup p {
-    margin: 10px 0; /* Adjust spacing between the heading and the paragraph */
-    line-height: 1.6; /* Keep paragraph readability */
-}
 
-/* Styling for the form */
-.footer form {
-    display: flex;
-    justify-content: flex-end;
-    align-items: center;
-}
 
-.footer input[type="email"] {
-    padding: 10px;
-    border: none;
-    width: 250px;
-    margin-right: 2px;
-    border-radius: 5px;
-    font-size: 1em;
-}
-
-.footer button {
-    padding: 10px 20px;
-    background-color: #ffcc00;
-    border: none;
-    border-radius: 5px;
-    font-size: 1em;
-    font-weight: bold;
-    cursor: pointer;
-    color: #333;
-}
-
-.footer button:hover {
-    background-color: #e6b800;
-}
 
 /* Styling for contact info section */
 .contact-info {
@@ -170,16 +135,6 @@ body, html {
     }
 
     .footer h3 {
-        margin-bottom: 10px;
-    }
-
-    .footer form {
-        justify-content: center;
-    }
-
-    .footer input[type="email"] {
-        width: 200px;
-        margin-right: 0;
         margin-bottom: 10px;
     }
 
@@ -281,8 +236,8 @@ ol#offer li::marker, ol#goals li::marker {
   /* Images inside the carousel */
   .mySlides img {
     width: 100%; /* Ensure images fill the width of the container */
-    height: auto; /* Maintain the aspect ratio of the images */
-    max-height: 100%; /* Prevent images from exceeding the max height of the container */
+    height: 80%; /* Maintain the aspect ratio of the images */
+    /* max-height: 100%; Prevent images from exceeding the max height of the container */
   }
 
 /* Next & previous buttons */
