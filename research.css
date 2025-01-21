@@ -1,0 +1,271 @@
+/* General page styling */
+body, html {
+    height: 100%; /* Ensure body and HTML take full height */
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f9;
+}
+
+/* Nav bar styling */
+.nav-bar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #333;
+    padding: 10px 20px;
+}
+
+.nav-bar img {
+    width: 50px;
+    height: auto;
+}
+
+.nav-bar a {
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
+    font-size: 28px;
+}
+
+.nav-bar ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+}
+
+.nav-bar ul li {
+    margin: 0 15px;
+}
+
+.nav-bar ul li a:hover {
+    color: #ffcc00;
+}
+
+/* Home icon (logo in nav bar) */
+.home-icon img {
+    width: 50px;
+    height: auto;
+}
+
+/* content styling */
+.title {
+    text-align: center;
+    margin-top: 50px;
+    color: #333;
+}
+
+.content {
+    padding: 20px;
+}
+
+
+.content h1 {
+    color: #333;
+    margin-bottom: 500px;
+}
+
+
+
+
+
+/* Footer styling */
+.footer {
+    background-color: #333; /* Dark grey background */
+    padding: 20px 20px; /* Reduced padding */
+    color: #fff;
+    text-align: center;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    gap: 0px; /* Adds a small gap between sections */
+}
+
+/* Email signup section */
+/* Email signup section */
+.email-signup {
+    max-width: 45%;
+    text-align: left;
+    padding-left: 15px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+}
+
+/* Align "Join Us" with the paragraph */
+.email-signup h3 {
+    font-size: 1.2em;
+    margin-bottom: 10px;
+    color: #ffcc00;
+    margin: 0; /* Remove any extra margin */
+    text-align: left;
+}
+
+.email-signup p {
+    margin: 10px 0; /* Adjust spacing between the heading and the paragraph */
+    line-height: 1.6; /* Keep paragraph readability */
+}
+
+/* Styling for the form */
+.footer form {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+}
+
+.footer input[type="email"] {
+    padding: 10px;
+    border: none;
+    width: 250px;
+    margin-right: 2px;
+    border-radius: 5px;
+    font-size: 1em;
+}
+
+.footer button {
+    padding: 10px 20px;
+    background-color: #ffcc00;
+    border: none;
+    border-radius: 5px;
+    font-size: 1em;
+    font-weight: bold;
+    cursor: pointer;
+    color: #333;
+}
+
+.footer button:hover {
+    background-color: #e6b800;
+}
+
+/* Styling for contact info section */
+.contact-info {
+    max-width: 50%;
+    text-align: left;
+    margin: 0; /* Removes unnecessary margins */
+    padding-right: 250px;
+}
+
+.contact-info h3 {
+    font-size: 1.2em;
+    margin-bottom: 10px;
+    color: #ffcc00;
+}
+
+.contact-info ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+.contact-info ul li {
+    margin: 5px 0;
+}
+
+.contact-info ul li a {
+    color: #fff;
+    text-decoration: none;
+    font-size: 1.1em;
+}
+
+.contact-info ul li a:hover {
+    text-decoration: underline;
+    color: #ffcc00;
+}
+
+.highlight {
+    color: #ffcc00; /* Yellow color */
+    font-weight: bold; /* Optional: Make the text bold */
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+    .footer {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .email-signup {
+        align-items: center;
+        text-align: center;
+    }
+
+    .footer h3 {
+        margin-bottom: 10px;
+    }
+
+    .footer form {
+        justify-content: center;
+    }
+
+    .footer input[type="email"] {
+        width: 200px;
+        margin-right: 0;
+        margin-bottom: 10px;
+    }
+
+    .contact-info {
+        text-align: center;
+    }
+
+    .contact-info ul {
+        padding: 0;
+    }
+}
+
+/* content styling */
+/* content styling */
+.title {
+    text-align: center;
+    margin-top: 50px;
+    color: #333;
+    text-decoration: underline;
+}
+
+.content {
+    padding: 20px;
+    font-family: Arial, sans-serif;
+}
+
+.section {
+    background-color: #f9f9f9; /* Light gray background */
+    padding: 20px;
+    margin-bottom: 20px;
+    border-radius: 10px; /* Rounded corners */
+    border-left: 5px solid #e6b800; /* Accent left border */
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Subtle shadow */
+}
+
+.section h2 {
+    margin-bottom: 15px;
+    font-size: 1.5rem;
+    color: #333; /* Darker gray for text */
+}
+
+.section ul {
+    list-style-type: none; /* Remove bullets */
+    padding-left: 0;
+}
+
+.section li {
+    margin-bottom: 10px; /* Space between list items */
+    line-height: 1.6; /* Improve readability */
+}
+
+.section ul ul {
+    padding-left: 20px; /* Indent sub-lists */
+}
+
+.section b {
+    color: #000; /* Bold label color */
+    margin-right: 5px;
+}
+
+.section a {
+    color: #007BFF; /* Blue for links */
+    text-decoration: none;
+}
+
+.section a:hover {
+    text-decoration: underline; /* Underline on hover */
+}
